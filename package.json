@@ -1,0 +1,19 @@
+{
+  "name": "drunken-octo-bear",
+  "version": "0.0.0",
+  "description": "write an commander app that takes two arguments.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/songty/drunken-octo-bear.git"
+  },
+  "author": "Tian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/songty/drunken-octo-bear/issues"
+  },
+  "homepage": "https://github.com/songty/drunken-octo-bear"
+}
