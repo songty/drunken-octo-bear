@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/songty/drunken-octo-bear/issues"
   },
-  "homepage": "https://github.com/songty/drunken-octo-bear"
+  "homepage": "https://github.com/songty/drunken-octo-bear",
+  "dependencies": {
+    "commander": "^2.2.0"
+  }
 }

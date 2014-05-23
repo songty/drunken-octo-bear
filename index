@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var program = require('commander');
+var fs = require('fs');
+var file = process.argv[2];
+var options = { encoding: 'utf8' };
+
+program
+  .version('0.0.1')
+  .option('')
+  .parse(process.argv);
+
+console.log(file);
+
+fs.readFile(file, options, function (err, contents) {
+	var saveInput = contents;
+	for (var i = 3; i < process.argv.length; i++) {
+		saveInput = saveInput + ' ' + process.argv[i];
+	}
+	fs.writeFile(file, saveInput, options, function (err) {
+	if (err) throw err;
+	console.log(saveInput);
+  	console.log('It\'s saved!');
+  	});
+});
+
